@@ -1,0 +1,24 @@
+p.gray {
+  color: darkgray;
+}
+
+p.blue {
+  color: lightblue;
+}
+
+body {
+  font-style: serif;
+}
+
+aside {
+  float: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: flex-start;
+  gap:.5rem;
+}
