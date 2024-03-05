@@ -10,15 +10,14 @@ body {
   font-style: serif;
 }
 
-aside {
+.sidebar {
   float: right;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: flex-start;
-  gap:.5rem;
+
+}
+
+.box {
+  
 }
