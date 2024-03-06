@@ -1,4 +1,6 @@
-
+ul{
+  list-style-type: none;
+}
 
 p.gray {
   color: darkgray;
@@ -10,6 +12,19 @@ p.blue {
 
 body {
   font-style: serif;
+}
+
+.skyblue { color: skyblue; }
+
+.footerLogos {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: darkgray;
+  justify-content: space-between;
+  color: white;
 }
 
 .sidebar {
@@ -26,25 +41,25 @@ body {
   float: left;
 }
 
-.container {
-  padding: 50px 0;
+.header {
+  padding: 100px 0;
   background-color: lightblue;
   color: white;
 }
 
-.box {
+.navbox {
   justify-content: space-between;
   height: 3rem;
   text-indent: 5%;
   background-color: lightgray;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-h1.a {
+h1 {
   text-indent: 5%;
 }
 
-h2.a {
+h2 {
   text-indent: 5%;
 }
 
@@ -57,19 +72,20 @@ p.q {
 }
 
 a:link {
-  color: black;
   background-color: transparent;
   text-decoration: none;
 }
+
 a:visited {
   color: black;
   background-color: transparent;
   text-decoration: none;
-
-.textbox {
-  display: flex;
-  width: 45rem;
 }
+
+a.class1 {
+  color: blue;
+}
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
