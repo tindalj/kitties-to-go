@@ -6,7 +6,25 @@ body {
     padding-bottom: 35rem;
     position: relative;
 }
-
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+h3 {
+    font-size: 1.3rem;
+    line-height: 180%;
+    color:#2C9AB7;
+}
+h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+p {
+    line-height: 180%;
+    font-size: 1.1rem;
+}
 .banner-img {
     background-image: url(https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock2-banner-image.jpg?raw=true);
     min-height: 316px;
@@ -33,7 +51,6 @@ body {
     line-height: normal;
     font-style: italic;
 }
-
 .nav-bar-main {
     position: absolute;
     text-align: left;
@@ -42,22 +59,18 @@ body {
     background: lightgrey;
     text-indent: 12rem;
     padding: .8rem 0;
-
 }
 .nav-bar-main ul {
     list-style-type: none;
-
 }
 .nav-bar-main li {
     display: inline;
-
 }
 .nav-bar-main a {
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
-
 }
 .nav-bar-main li:after {
     content: "/";
@@ -68,29 +81,6 @@ body {
 .nav-bar-main li:last-of-type:after {
     content: none;
 }
-
-
-main {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-h3 {
-    font-size: 1.3rem;
-    line-height: 180%;
-    color:#2C9AB7;
-}
-h2 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-p {
-    line-height: 180%;
-    font-size: 1.1rem;
-
-}
-
 .left-side {
     width: 65%;
     margin: 0 3rem 0 14rem;
@@ -112,7 +102,6 @@ p {
     color:#2C9AB7;
     text-decoration: none;
 }
-
 .right-sidebar {
     width: 30%;
     margin: 0 14rem 0 3rem;
@@ -127,7 +116,6 @@ p {
     text-decoration: none;
     font-size: 1.1rem;
 }
-
 footer {
     position: absolute;
     bottom: 0;
@@ -180,7 +168,6 @@ footer a {
 .location:last-of-type:after {
     content: none;
 }
-
 .profile-main {
     display: block;
 }
@@ -195,7 +182,6 @@ footer a {
     align-items: center;
     gap: 3rem;
     padding: 0;
-
 }
 .kitty-profile-box {
     width: 25%;
@@ -215,7 +201,6 @@ footer a {
     color: black;
     text-align: left;
 }
-
 .desc a {
     position:absolute;
     text-decoration: none;
