@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 body {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -5,7 +8,35 @@ body {
     margin: 0;
     padding-bottom: 35rem;
     position: relative;
+    background: linear-gradient(135deg, white, beige); /*backup if pic fails to load*/
+    background-image: url(https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (orientation: portrait) { /*gradient when viewing in portrait mode*/
+  body {
+    background: linear-gradient(135deg, white, beige);
+  }
+}
+
+@media screen {
+  header {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+
+}
+
 main {
     display: flex;
     justify-content: space-between;
@@ -39,7 +70,7 @@ p {
     color: white;
     text-align: left;
     vertical-align: middle;
-    margin-left: 14rem;
+    margin-left: 12%;
     top: 10%;
 }
 .banner-text-container h1 {
@@ -57,11 +88,12 @@ p {
     top: 316px;
     width: 100%;
     background: lightgrey;
-    text-indent: 12rem;
+    text-indent: 11%;
     padding: .8rem 0;
 }
 .nav-bar-main ul {
     list-style-type: none;
+    padding: 0;
 }
 .nav-bar-main li {
     display: inline;
@@ -104,7 +136,8 @@ p {
 }
 .right-sidebar {
     width: 30%;
-    margin: 0 14rem 0 3rem;
+    margin: 0 12% 0 2%;
+    padding: 1rem;
 }
 .right-side img {
     width: 100%;
@@ -215,4 +248,87 @@ footer a {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/* viewing on medium devices */
+@media only screen and (orientation: portrait) and (width < 768px) {
+    .right-side {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+        margin: 0 12%;
+    }
+}
+/* viewing on medium devices in landscape */
+@media only screen and (orientation: landscape) and (width < 1024px) {
+    .right-side {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+        margin: 0 12%;
+    }
+}
+@media print {
+    body img {
+      display: none;
+    }
+    body {
+        margin: 0;
+        color: #000;
+        background: #ffffff;
+    }
+    .nav-bar-main, footer, .banner-text-container p, .kitty-link {
+        display: none;
+    }
+    .banner-img {
+        background: #ffffff;
+    }
+    .banner-text-container {
+        margin: 1rem;
+    }
+    .banner-text-container h1 {
+        font-size: 20px;
+        color: #000;
+    }
+    main {
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    p, .quote, .cite-quote {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    .right-side img, .kitty-profile-box img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .kitty-profiles-container {
+        display: block;
+    }
+    .kitty-profile-box {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 220px;
+    }
+    .kitty-profile-box img {
+        float: left;
+    }
+    .kitty-name, .kitty-desc {
+        text-align: left;
+    }
 }
